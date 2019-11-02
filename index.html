@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>menu</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="toggle">
+            <div class="icon-Menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="subMenu">
+                <a href="#">Product</a>
+                <ul>
+                    <li><a href="#">Product1 Product1 Product1</a></li>
+                    <li><a href="#">Product2 Product1</a></li>
+                    <li><a href="#">Product3 Product1 Product1</a></li>
+                    <li><a href="#">Product4 Product1 Product1</a></li>
+                    <li><a href="#">Product5 Product1 Product1</a></li>
+                </ul>
+            </li>
+            <li><a href="#">User</a></li>
+            <li><a href="#">How To</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".icon-Menu").click(function () {
+                $("nav > ul").toggleClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
